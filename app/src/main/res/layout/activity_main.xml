@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.misao.toast_assignment2.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Toast assignment"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="Name"
+        android:textSize="20dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tvTel"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="Tel"
+        android:textSize="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/tvName"
+        />
+
+    <TextView
+        android:id="@+id/tvHeight"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="Height"
+        android:textSize="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/tvTel"
+        />
+
+    <TextView
+        android:id="@+id/tvBlood"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="Blood"
+        android:textSize="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/tvHeight"
+        />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input the Name"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="70dp"
+        />
+
+    <EditText
+        android:id="@+id/etTel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input the Tel"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/etName"
+        android:inputType="phone"
+        />
+
+    <EditText
+        android:id="@+id/etHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input the Height"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/etTel"
+        android:inputType="numberDecimal"
+        />
+
+    <RadioGroup
+        android:id="@+id/blood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/etHeight"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/typeA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="A" />
+
+        <RadioButton
+            android:id="@+id/typeB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="B" />
+
+        <RadioButton
+            android:id="@+id/typeO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="O"
+            />
+
+        <RadioButton
+            android:id="@+id/typeAB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="AB" />
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/btnSub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:textSize="20dp"
+        android:layout_marginTop="410dp"/>
+
+
+    <EditText
+        android:id="@+id/etAdd1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/blood"
+        android:hint="Input the  First value"
+        android:layout_marginTop="20dp"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/etAdd2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etAdd1"
+        android:hint="Input the  Second value"
+        android:layout_marginTop="10dp"
+        android:inputType="number"/>
+
+
+
+</RelativeLayout>
